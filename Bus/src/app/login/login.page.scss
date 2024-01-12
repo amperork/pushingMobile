@@ -1,0 +1,97 @@
+ion-content {
+	--background: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url("/assets/bus1.jpg") no-repeat center center / cover;
+}
+
+.login-section {
+	height: 74vh;
+	width: 100%;
+	max-width: 500px;
+	background: #fff;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	position: fixed;
+	margin: auto;
+	border-top-left-radius: 46px;
+	border-top-right-radius: 46px;
+
+	.heading{
+		margin-top: 20px;
+		h1{
+			font-size: 1.6rem;
+			font-weight: bolder;
+            color: #7b7b7b;
+            text-align: center;
+		}
+		p{
+			margin-top: 20px;
+			font-size: 1rem;
+			color: #7b7b7b;
+            text-align: center;
+		}
+	}
+	.login-form {
+        .form-input {
+          position: relative;
+          margin-bottom: 10px;
+      
+          ion-item::part(native) {
+            padding-left: 0;
+            --background: transparent; // Ensure no background color is set
+            --input-background: transparent; // Ensures input background is transparent
+          }
+      
+          ion-icon {
+            position: absolute;
+            top: 50%; // Center vertically
+            transform: translateY(-50%); // Adjust for exact vertical centering
+            z-index: 2;
+            font-size: 1.2rem;
+            left: 5px;
+          }
+      
+          ion-label {
+            position: absolute;
+            left: 30px; // Adjust the left position so it's next to the icon
+            top: 50%; // Center vertically
+            transform: translateY(-50%); // Adjust for exact vertical centering
+            font-weight: bolder;
+            font-size: 0.8rem;
+          }
+      
+          ion-input {
+            font-size: 0.9rem;
+            --padding-start: 40px; // Increase padding to make room for icon
+            --padding-top: 0; // Adjust padding-top to align with the icon and label
+            
+        }
+        }
+      }
+      
+    .action-button{
+        text-align: center;
+        .login-button{
+            --background: #f9b801;
+            font-weight: bold;
+            width: 60%;
+            }
+        p{
+            margin-top: 15px;
+            font-size: 1rem;
+            color: #7b7b7b;
+        }
+        .signup-button{
+          --border-color: #b4b4b4;
+          -color: #000000;
+          font-weight: bold;
+          margin-top: 25px;
+          width: 60%;
+        }
+        .register-btn{
+          --background: #f9b801;
+          font-weight: bold;
+          width: 60%;
+        }
+
+    }
+}

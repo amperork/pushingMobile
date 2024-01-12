@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-list>
+    <ion-item button [routerLink]="['']">
+      <ion-label>Trajet</ion-label>
+    </ion-item>
+    <ion-item button [routerLink]="['']">
+      <ion-label>Qr Code</ion-label>
+    </ion-item>
+    <ion-item button [routerLink]="['']">
+      <ion-label>Temps</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <div class="bus-page ion-padding">
+  <div class="action-button ion-padding">
+    <ion-button class="login-button" type="submit" (click)="authService.SignOut()" >Logout</ion-button>
+  </div>
+  </div>
+</ion-content>

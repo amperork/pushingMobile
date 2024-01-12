@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="dashboard"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Trajet</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="bus-page ion-padding">
+  <ion-item>
+    <ion-label position="floating">Départ</ion-label>
+    <ion-input [(ngModel)]="journey.departurePlace"></ion-input>
+  </ion-item>
+  <!-- Repeat for other journey properties -->
+
+  <div class="action-button ion-padding">
+  <ion-button class="login-button" (click)="addJourney()">Ajouter</ion-button>
+</div>
+</div>
+</ion-content>
+

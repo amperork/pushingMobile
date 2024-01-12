@@ -1,0 +1,19 @@
+ion-content {
+	--background: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url("/assets/bus1.jpg") no-repeat center center / cover;
+}
+
+ion-back-button {
+	color: #387ef5; /* Example: Change the color of the back button */
+  }
+  
+  .bus-page{
+	.action-button{
+	  text-align: center;
+	  .login-button{
+		--background: #f9b801;
+			  font-weight: bold;
+			  width: 60%;
+  
+	  }
+	}
+  }

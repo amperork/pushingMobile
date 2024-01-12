@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>ACCUEIL</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="bus-page ion-padding">
+  <ion-list>
+    <ion-item button [routerLink]="['/qr-code.page']">
+      <ion-label>Scan Qr</ion-label>
+    </ion-item>
+    <ion-item button [routerLink]="['/verification']">
+      <ion-label>Verification</ion-label>
+    </ion-item>
+    <ion-item button [routerLink]="['/localisation']">
+      <ion-label>Localisation</ion-label>
+    </ion-item>
+  </ion-list>
+  <div class="action-button ion-padding">
+  <ion-button class="login-button" type="submit" (click)="authService.SignOut()" >Logout</ion-button>
+</div>
+</div>
+</ion-content>

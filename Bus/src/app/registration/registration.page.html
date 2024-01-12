@@ -1,0 +1,62 @@
+<ion-content>
+  <div class="login-section ion-padding">
+    <div class="heading ion-padding">
+      <h1>Bienvenue</h1>
+      <p>Créer votre compte</p>
+    </div>
+
+    <ion-segment [(ngModel)]="selectedRole">
+      <ion-segment-button value="user">
+        <ion-label>USER</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="driver">
+        <ion-label>DRIVER</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="admin">
+        <ion-label>ADMIN</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+
+    <div class="login-form ion-padding">
+      <!-- Name field for 'user' role -->
+      <div class="form-input" *ngIf="selectedRole === 'user'">
+        <ion-icon name="person-outline"></ion-icon>
+        <ion-item>
+          <ion-input type="text" [(ngModel)]="name" required placeholder="Name"></ion-input>
+        </ion-item>
+      </div>
+      
+      <!-- Additional options for 'user' role -->
+      <ion-item *ngIf="selectedRole === 'user'">
+        <ion-label>Eyang</ion-label>
+        <ion-select [(ngModel)]="userOption" required>
+          <ion-select-option value="option1">Oui</ion-select-option>
+          <ion-select-option value="option2">Non</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <!-- Email field -->
+      <div class="form-input">
+        <ion-icon name="mail-outline"></ion-icon>
+        <ion-item>
+          <ion-input type="email" [(ngModel)]="email" required placeholder="Email"></ion-input>
+        </ion-item>
+      </div>
+
+      <!-- Password field -->
+      <div class="form-input">
+        <ion-icon name="lock-closed-outline"></ion-icon>
+        <ion-item>
+          <ion-input type="password" [(ngModel)]="password" required placeholder="Password"></ion-input>
+        </ion-item>
+      </div>
+
+      <div class="action-button ion-padding">
+        <ion-button class="register-btn" type="submit" (click)="signUp(email, password, name, userOption)">Register</ion-button>
+      </div>
+
+
+
+    </div>
+  </div>
+</ion-content>

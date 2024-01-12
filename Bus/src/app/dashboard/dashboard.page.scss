@@ -1,0 +1,29 @@
+ion-content {
+	--background: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url("/assets/bus1.jpg") no-repeat center center / cover;
+}
+
+
+ion-list {
+    margin-top: 20px;
+  
+    ion-item {
+      --padding-start: 20px;
+      --min-height: 50px;
+      --border-radius: 10px;
+      margin-bottom: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+  .dashboard-page{
+    .action-button{
+        text-align: center;
+      .login-button{
+        
+        --background: #f9b801;
+              font-weight: bold;
+              width: 60%;
+    
+      }  
+    }
+
+  }
